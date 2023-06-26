@@ -19,13 +19,13 @@ The following libraries were used in our code:
 2. `gcForestcs.py` - This file contains the modified version of the gcForest model that supports augmentation.
 3. `layer.py` - This file includes the code for constructing each layer of the model and implements the random erase functionality.
 4. `aug.py` - This file contains our implemented search augmentation policy and its integration into a complete model. It includes the `one_df` class, which can train a DF or its variants with the provided policy or without any policy, and the `aug_df` class, which performs policy search and records the selected policies.
-5. `train_augDF.py` - This file outlines the complete workflow for data preprocessing, model selection, and augmentation policy usage. To use the code with other datasets, you need to add dataset loading and preprocessing steps in `train_augDF.py`. Similarly, if you want to utilize other discovered augmentation strategies, modifications should be made in `train_augDF.py`.
+5. `train_augDF.py` - This file outlines the complete workflow for data preprocessing, model selection, and augmentation policy usage. To use the code with other datasets, you need to add dataset loading and preprocessing steps in `train_augDF.py`. Similarly, if you want to utilize other discovered augmentation policies, modifications should be made in `train_augDF.py`.
 6. `run.sh` - This shell script provides the complete training code for the `arrhythmia` dataset as an example. It trains the model five times, computes the mean and variance of the results, and redirects the output to the `records` folder for further examination.
 
 ### Additional Notes
 - To make the code compatible with other databases, you need to add dataset loading and preprocessing steps in `train_augDF.py`.
-- If you want to utilize other discovered augmentation strategies, modifications should be made in `train_augDF.py`.
-- After discovering augmentation strategies, we found that abandoning the additional five-fold cross-validation can make better use of the data and achieve improved results. We have included the implementation code in `deep_forest_schedule.py`.
+- If you want to utilize other discovered augmentation policies, modifications should be made in `train_augDF.py`.
+- After discovering augmentation policies, we found that abandoning the additional five-fold cross-validation can make better use of the data and achieve improved results. We have included the implementation code in `deep_forest_schedule.py`.
 
 Please feel free to reach out if you have any further questions or need additional information.
 
