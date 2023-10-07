@@ -1,5 +1,5 @@
 ## README
-Code for the article `Improve Deep Forest with Learnable Layerwise Augmentation Policy Schedules` submitted to CIKM'23 (refused)
+Code for the article `Improve Deep Forest with Learnable Layerwise Augmentation Policy Schedules` submitted to CIKM'23 (rejected)
 ### Introduction
 This README provides an overview of the code used in our research paper. It explains the purpose of each file and describes the libraries and versions we utilized. The code implements two models, `deep_forest.py` and `gcForestcs.py`, which are modified versions capable of utilizing augmentation. The `layer.py` file contains the code for constructing each layer of the model, including the implementation of random erase functionality. The `aug.py` file contains our implemented search augmentation policy and its application in a complete model. The `one_df` class can be used to train a DF (Deep Forest) or its variants with the provided policy or without any policy. The `aug_df` class performs policy search and records the selected policies.
 
